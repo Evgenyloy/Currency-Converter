@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+
+    <div class="converter">
+        <div class="converter__title">Currency Converter</div>
+        <div class="converter__inner">
+            <div class="converter__item">
+                <div class="converter__item-name">usd</div>
+                <div class="converter__item-price " id="usd"></div>
+            </div>
+            <div class="converter__item">
+                <div class="converter__item-name">eur</div>
+                <div class="converter__item-price " id="eur"></div>
+            </div>
+            <div class="converter__item">
+                <div class="converter__item-name">gbp</div>
+                <div class="converter__item-price" id="gbp"></div>
+            </div>
+
+        </div>
+        <form action="#" class="converter__form-inner">
+            <div class="converter__form">
+                <select class="converter__form-select">
+                    <option value="RUB">RUB</option>
+                </select>
+                <input class="converter__form-input" id="input1" type="number" placeholder="0">
+            </div>
+            <div class="converter__form">
+                <select class="converter__form-select" id="select">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GPB</option>
+                </select>
+                <input class="converter__form-input" id="input2" type="text" readonly>
+            </div>
+
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
